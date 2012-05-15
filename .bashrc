@@ -58,6 +58,7 @@ function gg() {
 }
 
 export DISPLAY=:0
+export JAVA_HOME='/usr/lib/jvm/jdk1.6.0_26'
 
 # RVM
 [[ -s ~/.rvm/scripts/rvm ]] && source ~/.rvm/scripts/rvm  # This loads RVM into a shell session.
