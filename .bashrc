@@ -42,6 +42,13 @@ PS1="\[${bldblu}\] \h \w \[${bldred}\]\$(parse_git_branch)\[${bldblu}\]\$\[${txt
 
 # Git
 alias g="git"
+alias gs="git status"
+alias gp="git push"
+alias gpl="git pull"
+alias gc="g c"
+alias ga="g aa"
+alias be="bundle exec"
+alias bec="bundle exec cucumber"
 alias gco="git co"
 alias gl="git log --oneline --decorate"
 alias gd="git diff"
@@ -62,5 +69,8 @@ export JAVA_HOME='/usr/lib/jvm/jdk1.6.0_26'
 
 # RVM
 [[ -s ~/.rvm/scripts/rvm ]] && source ~/.rvm/scripts/rvm  # This loads RVM into a shell session.
+
+# Tmuxinator
+[[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
