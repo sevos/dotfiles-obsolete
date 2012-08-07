@@ -74,3 +74,4 @@ export JAVA_HOME='/usr/lib/jvm/jdk1.6.0_26'
 [[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+export SSL_CERT_FILE=~/bin/cacert.pem

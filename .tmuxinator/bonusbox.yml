@@ -1,0 +1,15 @@
+# ~/.tmuxinator/bonusbox.yml
+# you can make as many tabs as you wish...
+
+project_name: Bonusbox Core
+project_root: ~/development/projects/bonusbox/core
+rvm: ruby-1.9.3-p0@bonusboxme_api
+tabs:
+  - shell: git pull
+  - database:
+      layout: main-horizontal
+      panes:
+        - ../box
+        - localtunnel -k ~/.ssh/id_rsa.pub 3000
+  - web-server: sleep 5 && rails s
+  - solr: sleep 5 && rake sunspot:solr:run
