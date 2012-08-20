@@ -38,7 +38,11 @@ function parse_git_branch {
   git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/[\1] /'
 }
 
-PS1="\[${bldblu}\] \h \w \[${bldred}\]\$(parse_git_branch)\[${bldblu}\]\$\[${txtrst}\] "
+function current_directory {
+  pwd | awk -F/ '{print $NF}'
+}
+
+PS1="\[${bldblu}\]\h \w \[${bldred}\]\n\$(parse_git_branch)\[${bldblu}\]\$\[${txtrst}\] "
 
 # Git
 alias g="git"
