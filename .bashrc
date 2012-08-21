@@ -79,3 +79,6 @@ export JAVA_HOME='/usr/lib/jvm/jdk1.6.0_26'
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 export SSL_CERT_FILE=~/.dotfiles/cacert.pem
+
+export EDITOR=vim
+
