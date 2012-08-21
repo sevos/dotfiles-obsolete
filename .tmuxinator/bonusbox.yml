@@ -11,5 +11,6 @@ tabs:
       panes:
         - ../box
         - localtunnel -k ~/.ssh/id_rsa.pub 3000
-  - web-server: sleep 5 && rails s
-  - solr: sleep 5 && rake sunspot:solr:run
+  - web-server: sleep 2 && rails s
+  - solr: sleep 2 && rake sunspot:solr:run
+  - spork: sleep 2 && bundle exec spork rspec
